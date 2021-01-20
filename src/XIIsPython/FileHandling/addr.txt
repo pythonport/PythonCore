@@ -1,0 +1,12 @@
+readline() will return a line read,
+ as a string from the file. First 
+ call to function will return first line, second
+call next line and so on. Remember 
+file object keeps the track of from 
+where reading / writing of data
+should happen. For readline() 
+a line is terminated by \n (i.e. new line character).
+ The new line character is
+also read from the file and post-fixed in the string. 
+When end of file is reached, readline() will return an
+empty string.

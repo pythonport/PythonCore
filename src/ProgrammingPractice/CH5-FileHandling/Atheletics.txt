@@ -1,0 +1,6 @@
+Cricket~Jadeja,doni,kohli,pandya,rohit, chahal,sami,bumra
+Tenis~Mahesh, pb sindhu, sania mirza, pace
+Badminton~Gopichand,saina nehwal
+Judo~Sarita, nitu, sanjay
+Taekwondo~Vijay, jyoti
+Football~defence, suraj, sonu, rupesh

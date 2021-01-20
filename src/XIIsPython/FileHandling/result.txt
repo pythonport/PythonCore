@@ -1,0 +1,5 @@
+CS - 67, Che - 68, Phy - 90, Maths - 98, Eng -100
+CS - 77, Che - 65, Phy - 20, Maths - 78, Eng -70
+CS - 98, Che - 68, Phy - 95, Maths - 98, Eng -90
+CS - 63, Che - 68, Phy - 80, Maths - 98, Eng -80
+CS - 78, Che - 68, Phy - 50, Maths - 98, Eng -70
