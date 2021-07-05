@@ -1,0 +1,5 @@
+Write a Program that reads a text file line by line and prints its statistics like:
+     Number of uppercase letters:
+     Number of lowercase letters:
+     Number of vowels:
+     Number of consonant:
