@@ -7,7 +7,7 @@ tpl = (3, 4, 5, 2, 5, 1, 5)
 ele = int(input('Enter element to search - '))
 
 if ele in tpl :
-    # ind = tpl.index(ele)
+    #ind = tpl.index(ele)
     for i in range(len(tpl)) :
         if tpl[i] == ele :
             print('{0} is at index {1}'.format(ele, i))
