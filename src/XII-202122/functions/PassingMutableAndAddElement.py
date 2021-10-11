@@ -1,13 +1,12 @@
 '''
-Created on Aug 19, 2021
-function passing and receiving mutable data type
+Created on Aug 23, 2021
+
 @author: admin
 '''
 
-
 def myfunction1(mylist):
     print("inside the function value received is  - ", mylist)
-    mylist[0] += 2
+    mylist.remove(2)
     print("Value now changed to   - ", mylist)
     print("Returning from the function")
 

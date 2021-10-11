@@ -16,7 +16,7 @@ root = Tk()
 root.configure(background="green")
 root.title("Digital Clock using TKinter")
 
-clock = Label(root, font=('times', 250, 'bold'), bg='green')
+clock = Label(root, font=('times', 250, 'bold'), bg='orange')
 #clock.pack(fill=BOTH, expand=1)
 clock.pack()
 '''

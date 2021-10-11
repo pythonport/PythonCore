@@ -1,0 +1,8 @@
+fout = open('poem.txt','r')
+#str = fout.read()
+str1 = fout.readline()
+str2 = fout.readline()
+str3 = fout.readline()
+print(str1)
+print(str2)
+print(str3)
