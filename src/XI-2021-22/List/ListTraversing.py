@@ -1,6 +1,6 @@
 '''
 Created on Jan 27, 2022
-
+Traversing the list and manipulation the list
 @author: admin
 '''
 lst = ['p', 'y', 't', 'h', 'o', 'n']

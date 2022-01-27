@@ -1,6 +1,6 @@
 '''
 Created on Jan 27, 2022
-
+Test mutablity of list
 @author: admin
 '''
 str = 'python'
