@@ -1,0 +1,20 @@
+'''
+Created on Sep 3, 2021
+
+@author: admin
+'''
+num = input("Enter an number :")
+
+OctalToDecimal(int(num))
+
+def OctalToDecimal(num): 
+      
+    decimal_value = 0 
+    base = 1
+  
+    while (num): 
+        last_digit = num % 10
+        num = int(num / 10)
+        decimal_value += last_digit * base
+        base = base * 8  
+    print("The decimal value is :",decimal_value)
