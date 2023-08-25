@@ -1,0 +1,3 @@
+Hello this is the program written with the help of with statement.
+
+    This can me done without closing the file explicitely
