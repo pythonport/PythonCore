@@ -20,7 +20,7 @@ payload = {
 
 headers = {
 "Content-Type": "application/json",
-"Authorization": f"Bearer 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"
+"Authorization": f"Bearer Key received from openapi"
 }
 
 response = requests.post(URL, headers=headers, json=payload, stream=False)
