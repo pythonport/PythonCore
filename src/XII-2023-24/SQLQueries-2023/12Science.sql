@@ -24,12 +24,13 @@ update teacher set tid=5 where subject='Computer Sc';
 
 select * from teacher;
 
-create table employee(
+create table employee1(
 	ecode integer,
 	ename varchar(20),
 	sex char(1),
 	grade char(2),
-	gross decimal(2)
+	gross decimal(2),
+	dob date
 );
 
 insert into employee values(1001,'ravi','M','E4',4670.50);
@@ -111,7 +112,7 @@ insert into customer(cid, cname, address) values(3, 'vimal','ranchi');
 
 alter table employee add primary key(ecode);
 
-create table order (
+create table orders(
 	orderid integer not null,
 	orderdate date not null,
 	sid integer,
@@ -119,3 +120,41 @@ create table order (
 	PRIMARY KEY (orderid),
     FOREIGN KEY (sid) REFERENCES customer(cid)
 );
+
+insert into orders values (11,'2023-10-27',3,500);
+insert into orders values (12,'2023-10-26',2,550);
+insert into orders values (13,'2023-10-25',3,578);
+insert into orders values (14,'2023-10-25',null,578);
+
+insert into employee1(select * from employee where gross between 4500 and 5500);
+
+delete from employee where gross is null;
+
+----------------Joining Tables
+-- Equi Join
+select cid, cname, address
+from customer, orders
+where customer.cid = orders.sid
+and orderid=13;
+
+-- Cartesion Product
+select *
+from customer, orders;
+
+-- Inner Join
+select *
+from customer
+inner join orders
+where customer.cid = orders.sid;
+
+-- Left join
+select *
+from customer
+left join orders
+on customer.cid = orders.sid;
+
+-- Right join
+select *
+from customer
+right join orders
+on customer.cid = orders.sid;
