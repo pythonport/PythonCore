@@ -8,5 +8,5 @@ joinedList = '*'.join('hello')
 print(joinedList)
 
 lst = ['hello', 'welcome', 'to', 'vidyalaya']
-jlist = '$'.join(lst1)
+jlist = '$'.join(lst)
 print(jlist)
