@@ -158,3 +158,28 @@ select *
 from customer
 right join orders
 on customer.cid = orders.sid;
+
+-- order by cluases
+select * from employee
+order by ename;
+
+select * from employee
+order by sex, ename;
+
+select * from employee
+order by ename desc;
+
+select * from employee
+order by sex asc, ename desc;
+
+select ename, gross, (gross*0.1) as bonus
+from employee;
+
+select ename, gross, (gross*10)/100) as bonus
+from employee;
+
+select * from employee
+order by field(sex, 'm','f');
+
+--Aggrigate Functions
+select count(*) from employee where sex='f';
