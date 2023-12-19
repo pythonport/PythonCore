@@ -5,7 +5,7 @@ Created on Aug 16, 2023
 '''
 
 import pickle
-'''
+
 fh = open('studentList.dat','rb')
 try :
  stulist = pickle.load(fh)
@@ -21,3 +21,4 @@ with open('studentList.dat','rb') as fh :
     stulist = pickle.load(fh)
 
 print(stulist)
+'''

@@ -6,5 +6,6 @@ Created on Sep 8, 2023
 import csv
 file = open('funds.csv','r')
 data = csv.reader(file)
+
 for row in data :
     print(row)

@@ -12,5 +12,7 @@ if conn :
 mycursor = conn.cursor()
 query = 'select * from customer'
 mycursor.execute(query)
+result = mycursor.fetchall()
 
-print("No of records fetched - ",mycursor.rowcount())
+for row in result :
+    print(row)
