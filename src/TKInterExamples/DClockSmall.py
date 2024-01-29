@@ -15,9 +15,9 @@ def tick():
 
 root = Tk()
 # root.configure(background="green")
-root.title("Digital Clock using TKinter")
+root.title("Digital Clock JNV Dhanbad")
 
-clock = Label(root, font=('times', 100, 'bold',), background='pink', foreground='blue')
+clock = Label(root, font=('JetBrains Mono ExtraBold', 100, 'bold',), background='pink', foreground='blue')
 clock.pack()
 tick()
 root.mainloop()

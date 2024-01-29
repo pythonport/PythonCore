@@ -21,7 +21,7 @@ def getFilePath(houseName):
     elif (houseName == 'arawali-g') :
         filePath = r'C:\Users\admin\Documents\PyDevPrograms\PythonQRHouseWise\src\house\girl\arawali\arawali.csv'
     elif (houseName == 'nilgiri-g') :
-        filePath = r'C:\Users\admin\Documents\PyDevPrograms\PythonQRHouseWise\src\house\girl\nilgiri\nilgiri.csv'
+        filePath = r'D:\Python-Softwares-2023\PythonCode\PythonCore\src\HouseQRGenerator\house\girl\nilgiri\nilgiri.csv'
     elif (houseName == 'shivalik-g') :    
         filePath = r'C:\Users\admin\Documents\PyDevPrograms\PythonQRHouseWise\src\house\girl\shivalik\shivalik.csv'
     elif (houseName == 'udaygiri-g') :
@@ -45,12 +45,13 @@ def getStudentList(filePath):
     return lstStudent
 
 
-def generateHouseQR(stulist):
+def generateHouseQR(stulist, boyGirl):
     for student in stulist :
-        generateQR(student)
+        print(student)
+        generateQR(student, boyGirl)
     
 
-def generateQR(student): 
+def generateQR(student, boyGirl): 
     qr = qrcode.QRCode(
         version=1,
         error_correction=qrcode.constants.ERROR_CORRECT_L,
@@ -59,22 +60,22 @@ def generateQR(student):
     )
     House = student['House']
     Name = student['Name']
-    boyGirl = 'boy'  # girl  Change to boy/girl based on house data
     
     qr.add_data(student)
     qr.make(fit=True)    
     img = qr.make_image(fill_color="black", back_color="white")
     # img.show()
-    abpath = r'C:\Users\admin\Documents\PyDevPrograms\PythonQRHouseWise\src\house'
+    abpath = r'D:\Python-Softwares-2023\PythonCode\PythonCore\src\HouseQRGenerator\house'
     img.save(abpath + '\\' + boyGirl + '\\' + House + '\\' + House[0] + '-' + Name + ".png")
 
 
 #main program starts here
 houseList = ['arawali-b', 'arawali-g', 'nilgiri-b', 'nilgiri-g', 'shivalik-b', 'shivalik-g', 'udaygiri-b', 'udaygiri-g']    
-filePath = getFilePath(houseList[2])
+filePath = getFilePath(houseList[3])
 stulist = getStudentList(filePath)
 if(len(stulist) != 0) :
-    generateHouseQR(stulist)
+    boyGirl = 'girl'  # girl  Change to boy/girl based on house data
+    generateHouseQR(stulist, boyGirl)
     print('QR Generated ! Thumps up !')
 else :
     print('No data found please check again.')

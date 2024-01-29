@@ -18,7 +18,9 @@ db = mysql.connector.connect(host="localhost",
 dbcursor = db.cursor()
 query = "select * from employee";
 dbcursor.execute(query)
-result = dbcursor.fetchall() #fetch all record from database
+result = dbcursor.fetchmany() #fetch all record from database
+#dbcursor.fetchone()
+#dbcursor.fetchmany(3)
 
 #printing employee information
 for emp in result :
