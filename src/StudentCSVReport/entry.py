@@ -1,6 +1,6 @@
 import os
 import stuentry
-import stutmain
+import stumain
 #STUDENT ENTRY MAN FUNCTION
 
 def entry_main() :
@@ -18,11 +18,7 @@ def entry_main() :
     print()
     print("\t\t\t <3> SEARCH STUDENT RECORD")
     print()
-    print("\t\t\t <4> MODIFY STUDENT RECORD")
-    print()
-    print("\t\t\t <5> DELETE STUDENT RECORD")
-    print()
-    print("\t\t\t <6> BACK TO MAIN MENU")
+    print("\t\t\t <4> BACK TO MAIN MENU")
     print("\t\t"+"*"*30)
     print()
     ch =input(" Please select your option(1-6) : ")
@@ -31,16 +27,13 @@ def entry_main() :
         stuentry.create()
     elif ch=="2" :
         os.system('cls')
-        stuentry.display()
+        stuentry.showData()
     elif ch=="3" :
         os.system('cls')
         stuentry.search()
     elif ch=="4" :
         os.system('cls')
-        #stuentry.modify()
-    elif ch=="5" :
-        os.system('cls')
-        #stuentry.delete()
-    if ch =="6" :
-        os.system('cls')
         stumain.mainfunc()
+    else :
+        os.system('cls')
+        print("Invalid input")

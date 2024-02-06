@@ -1,5 +1,5 @@
 import os
-import stuentry
+#import stuentry
 import studentmain
 
 def result_main() :

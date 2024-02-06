@@ -1,5 +1,5 @@
 #import result
-import entry
+#import entry
 import os
 
 # MAIN FUNCTION TO ENTER INSIDE APPLICATION
@@ -25,6 +25,6 @@ def mainfunc() :
         #result.result_main()
     elif ch =="2" :
         os.system('cls')
-        entry.entry_main()
+        #entry.entry_main()
     else :
         exit()
