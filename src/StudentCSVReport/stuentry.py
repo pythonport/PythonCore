@@ -37,6 +37,12 @@ def showData():
             for cell in row :
                 print(cell, '-',end=' ') 
                 lcount+=1
+    print("*"*40)
+    ch = input("Do you want to continue y/n :")
+    fout.close()
+    if ch =="y" :        
+        os.system('cls')
+        entry.entry_main()
      
 def create() :
     ch  = 'y'

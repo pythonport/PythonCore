@@ -1,5 +1,5 @@
 #import result
-#import entry
+import entry
 import os
 
 # MAIN FUNCTION TO ENTER INSIDE APPLICATION
@@ -22,9 +22,9 @@ def mainfunc() :
     ch = input(" Please select your option(1-3) : ")
     if ch =="1" :
         os.system('cls')
-        #result.result_main()
+        result.result_main()
     elif ch =="2" :
         os.system('cls')
-        #entry.entry_main()
+        entry.entry_main()
     else :
         exit()
