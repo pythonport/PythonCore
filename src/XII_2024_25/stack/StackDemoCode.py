@@ -1,7 +1,7 @@
 '''
-Created on Sep 14, 2023
+Created on Oct 12, 2024
 
-@author: Admin
+@author: admin
 '''
 def isEmpty(stk):
     if stk == [] :
@@ -18,13 +18,13 @@ def display(stk):
         print('Stack is Empty')
     else :
         top = len(stk) - 1
-        print(stk[top], ' <- top')
+        print('|'+str(stk[top])+'|'+ ' <- top')
         for a in range(top - 1, -1, -1):
-            print(stk[a])
-            
+            print('|'+str(stk[a])+'|')
+        print('___')    
             
 def pop(stk):
-    if isEmpty(stk) :  # if(stk == []) :
+    if isEmpty(stk) :
         return 'Underflow'
     else :
         item = stk.pop()
