@@ -7,12 +7,12 @@ import turtle as tur
 tur.bgcolor('black')
 tur.color('white')
 tur.speed(0)
+tur.fillcolor('green')
+tur.begin_fill()
+r = 100
 for j in range(20) :
-    tur.fillcolor('blue')
-    tur.begin_fill()
-    for i in range(3):
-        tur.forward(200)
-        tur.right(120)
+    r = r-5
+    tur.circle(r)
     tur.right(20)
-    tur.end_fill()
+tur.end_fill()
 tur.done()

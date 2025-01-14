@@ -41,7 +41,7 @@ def new_Question() :
     global num1
     global num2
     num1 = random.randint(1, 10)
-    num2 = random.randint(2,11)
+    num2 = random.randint(2,20)
     lblin['text'] ='What is {} * {} = ?'.format(num1, num2)
 
 
