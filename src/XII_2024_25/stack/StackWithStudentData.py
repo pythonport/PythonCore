@@ -18,9 +18,9 @@ def display(stk):
         print('Stack is Empty')
     else :
         top = len(stk) - 1
-        print('|'+str(stk[top])+'|'+ ' <- top')
+        print(str(stk[top])+ ' <- top')
         for a in range(top - 1, -1, -1):
-            print('|'+str(stk[a])+'|')
+            print(str(stk[a]))
         print('___')    
             
 def pop(stk):

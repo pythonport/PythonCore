@@ -1,6 +1,12 @@
 '''
 Created on Nov 26, 2024
 
+
+
+
+
+
+
 @author: admin
 '''
 import mysql.connector as connector
