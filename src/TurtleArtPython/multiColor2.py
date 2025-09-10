@@ -4,8 +4,8 @@ Created on Dec 26, 2024
 @author: admin
 '''
 import turtle as tur
-tur.bgcolor('black')
-tur.color('white')
+tur.bgcolor('white')
+tur.color('blue')
 tur.speed(0)
 colors = ['red','green','blue','yellow','pink']
 a = 0

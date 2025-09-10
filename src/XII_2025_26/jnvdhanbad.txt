@@ -1,0 +1,4 @@
+This is python program 
+to demonstrate the use of 
+relative path and
+absolute path.

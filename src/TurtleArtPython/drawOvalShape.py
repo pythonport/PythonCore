@@ -18,7 +18,7 @@ def draw(rad):
 # Set screen size
 screen.setup(500,500)
 # Set screen color
-screen.bgcolor('black')
+screen.bgcolor('white')
 # Colors
 col=['violet','blue','green','yellow',
     'orange','red']
