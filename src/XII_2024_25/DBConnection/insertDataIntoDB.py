@@ -1,16 +1,9 @@
 '''
 Created on Nov 26, 2024
-
-
-
-
-
-
-
 @author: admin
 '''
 import mysql.connector as connector
-myconn = connector.connect(host='localhost', user='root', password = 'dhanbad', database = 'jnvdhanbad')
+myconn = connector.connect(host='localhost', user='root', password = 'dhanbad', database = 'dhanbaddb')
 mycursor = myconn.cursor()
 
 petname = input('Pet Name - ')
