@@ -6,6 +6,6 @@ Code to demonstrate the use of reading csv file
 import csv
 fh = open('studentFee.csv','r')
 jnvreader = csv.reader(fh)
-
+#next(jnvreader)
 for data in jnvreader :
     print(data)
