@@ -1,0 +1,4 @@
+1. select name from stumarks where grade = 'A';
+2. select * from stumarks where name like 'H%';
+3. update stumarks set marks = 71, grade = 'B', result = 'Pass' where name = 'Karan';
+4. select * from stumarks where name = 'karan';
