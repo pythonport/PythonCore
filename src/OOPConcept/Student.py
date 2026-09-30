@@ -23,4 +23,7 @@ class Student(object):  #structure of class
 akash = Student() #object of class student
 akash.getStudentData()
 akash.printStudentData()
-print(akash.stuid)
+
+manish = Student() #object of class student
+manish.getStudentData()
+manish.printStudentData()

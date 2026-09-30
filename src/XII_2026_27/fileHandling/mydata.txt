@@ -1,0 +1,3 @@
+Hello I am at JNV dhanbad, studying computer science
+Language-Python
+File Handling

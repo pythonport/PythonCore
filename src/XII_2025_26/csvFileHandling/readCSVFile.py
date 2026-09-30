@@ -9,3 +9,5 @@ jnvreader = csv.reader(fh)
 #next(jnvreader)
 for data in jnvreader :
     print(data)
+
+fh.close()

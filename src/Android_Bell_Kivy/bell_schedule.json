@@ -1,0 +1,17 @@
+[
+    {
+        "time": "08:20",
+        "label": "First Period",
+        "enabled": true
+    },
+    {
+        "time": "10:30",
+        "label": "Recess Break",
+        "enabled": true
+    },
+    {
+        "time": "15:00",
+        "label": "School Dismissal",
+        "enabled": true
+    }
+]
