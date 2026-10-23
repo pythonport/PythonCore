@@ -1,0 +1,45 @@
+create table guardian (
+	gid int AUTO_INCREMENT  primary key,
+	gname varchar(30),
+	gphone bigint(10),
+	gaddr varchar(50)
+);
+
+insert into guardian(gname, gphone, gaddr) values 
+('amit kumar',7845123265, 'tundi dhanbad');
+
+insert into guardian(gname, gphone, gaddr) values 
+('vinit mahato',7845123777, 'tetulmari dhanbad');
+
+insert into guardian(gname, gphone, gaddr) values 
+('kamal prasad',7845123555, 'bhuli dhanbad');
+
+insert into guardian(gname, gphone, gaddr) values 
+('harish prasad',7845123123, 'baua dhanbad');
+
+insert into guardian(gname, gphone, gaddr) values 
+('amit bhuinya',7845123223, 'shakti chouk dhanbad');
+
+select * from guardian;
+
+-- === Employee table record from NCERT Book for DML operation
+create table EMPLOYEE (
+	EmpNo int(3) primary key,
+	Ename varchar(20) not null,
+	Salary int(5) not null,
+	Bonus int(5),
+	Deptld varchar(3)
+);
+
+insert into EMPLOYEE values(101,'Aaliya',10000,234,'D02');
+insert into EMPLOYEE values(102,'Kritika',60000,123,'D01');
+insert into EMPLOYEE values(103,'Shabbbir',45000,566,'D01');
+insert into EMPLOYEE values(104,'Gurpreet',19000,565,'D04');
+insert into EMPLOYEE values(105,'Joseph',34000,875,'D03');
+insert into EMPLOYEE values(106,'Sanya',48000,695,'D02');
+insert into EMPLOYEE values(107,'Vergese',15000,null,'D01');
+insert into EMPLOYEE values(108,'Nachaobi',29000,null,'D05');
+insert into EMPLOYEE values(109,'Daribha',42000,null,'D04');
+insert into EMPLOYEE values(110,'Tanya',50000,467,'D05');
+
+select * from EMPLOYEE;
