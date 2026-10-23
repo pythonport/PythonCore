@@ -28,7 +28,7 @@ create table EMPLOYEE (
 	Ename varchar(20) not null,
 	Salary int(5) not null,
 	Bonus int(5),
-	Deptld varchar(3)
+	deptid varchar(3)
 );
 
 insert into EMPLOYEE values(101,'Aaliya',10000,234,'D02');
@@ -43,3 +43,9 @@ insert into EMPLOYEE values(109,'Daribha',42000,null,'D04');
 insert into EMPLOYEE values(110,'Tanya',50000,467,'D05');
 
 select * from EMPLOYEE;
+select EmpNo, Ename, Salary from employee;
+select ename as 'employee name' from employee;
+select EmpNo, Ename, Salary as 'Monthly Pay' from employee;
+select ename, salary, salary*12 as 'Yearly Pay' from employee;
+
+select distinct deptid from employee order by deptid;
