@@ -49,3 +49,16 @@ select EmpNo, Ename, Salary as 'Monthly Pay' from employee;
 select ename, salary, salary*12 as 'Yearly Pay' from employee;
 
 select distinct deptid from employee order by deptid;
+
+select distinct deptid from employee order by deptid;
+select * from employee where deptid='D01';
+select distinct Salary from employee where deptid='D01';
+
+select * from EMPLOYEE where Salary>5000 and deptid='D04';
+select * from EMPLOYEE where Ename != 'Aaliya';
+select * from EMPLOYEE where not Ename = 'Aaliya';
+select deptid from employee;
+
+select Ename, deptid from employee where Salary>=20000 and salary<=50000;
+
+select Ename, deptid from employee where salary between 20000 and 50000;
