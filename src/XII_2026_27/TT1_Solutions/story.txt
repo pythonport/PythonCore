@@ -1,0 +1,2 @@
+Define a function showword() in python to read lines from a text 
+file story.txt, and display those words whose length is less then 5.

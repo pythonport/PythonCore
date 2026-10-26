@@ -1,6 +1,7 @@
 '''
 Created on Oct 12, 2024
-
+Menu driven Stack Implementation
+Functions : isEmpyt()  | push()  |  pop() | display() | peek()
 @author: admin
 '''
 def isEmpty(stk):
